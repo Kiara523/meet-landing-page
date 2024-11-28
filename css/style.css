@@ -64,8 +64,11 @@ body {
     /* BUTTON COLORS */
     --BUTTON-PURPLE: hsl(268, 34%, 53%);
     --BUTTON-CYAN: hsl(192, 37%, 48%);
-    --BUTTON-PURPLE-HOVER: hsl(268, 100%, 86%); 
-    --BUTTON-CYAN-HOVER: hsl(192, 90%, 77%);
+    --BUTTON-PURPLE-V13: hsl(268, 100%, 86%); 
+    --BUTTON-CYAN-V13: hsl(192, 90%, 77%);
+    
+    --BUTTON-PURPLE-HOVER: hsl(268, 55%, 71%);
+    --BUTTON-CYAN-HOVER: hsl(192, 54%, 64%);
 
     /* BG FOOTER COLORS */
     --IMAGE-BG-COLOR: hsla(192, 37%, 48%, 0.882);
@@ -198,11 +201,23 @@ footer {
 }
 
 .cyan {
-    color: var(--BUTTON-CYAN-HOVER) ;
+    color: var(--BUTTON-CYAN-V13) ;
 }
 
 .lila {
-    color: var(--BUTTON-PURPLE-HOVER);
+    color: var(--BUTTON-PURPLE-V13);
+}
+
+.button__download:hover, 
+.button__download:focus {
+    background-color: var(--BUTTON-CYAN-HOVER);
+}
+
+.button__footer:hover,
+.button__footer:focus,
+.button__info:hover,
+.button__info:focus {
+    background-color: var(--BUTTON-PURPLE-HOVER);
 }
 
 /* Page Number */
